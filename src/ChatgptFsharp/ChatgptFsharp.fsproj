@@ -1,0 +1,38 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+    <PropertyGroup>
+        <OutputType>Exe</OutputType>
+        <TargetFramework>net7.0</TargetFramework>
+    </PropertyGroup>
+    <PropertyGroup>
+        <RestorePackagesWithLockFile>true</RestorePackagesWithLockFile>
+    </PropertyGroup>
+    <ItemGroup>
+        <Compile Include="Database.fs" />
+        <Compile Include="Config.fs" />
+        <Compile Include="Templates\App.fs" />
+        <Compile Include="Templates\Index.fs" />
+        <Compile Include="Templates\NotFound.fs" />
+        <Compile Include="Templates\InternalError.fs" />
+        <Compile Include="Router.fs" />
+        <Compile Include="Program.fs" />
+        <Content Include="static\*.*">
+            <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+        </Content>
+        <Content Include="*.sqlite">
+            <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+        </Content>
+    </ItemGroup>
+    <ItemGroup>
+        <PackageReference Update="FSharp.Core">
+            <Version>7.0.200</Version>
+        </PackageReference>
+        <PackageReference Update="Saturn">
+            <Version>0.16.1</Version>
+        </PackageReference>
+        <PackageReference Include="Dapper.FSharp" Version="4.5.0" />
+        <PackageReference Update="Microsoft.Data.Sqlite">
+            <Version>7.0.5</Version>
+        </PackageReference>
+        <PackageReference Include="Saturn" Version="0.16.1" />
+    </ItemGroup>
+</Project>

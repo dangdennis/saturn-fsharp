@@ -1,0 +1,12 @@
+{
+  "version": 1,
+  "isRoot": true,
+  "tools": {
+    "saturn.cli": {
+      "version": "1.0.4",
+      "commands": [
+        "saturn"
+      ]
+    }
+  }
+}
