@@ -1,9 +1,13 @@
-### How to build application
+### How to develop your application
 
-1. Make sure you have installed version of .NET SDK defined in `global.json`
-2. Run `dotnet tool restore` to restore all necessary tools
-3. Run `dotnet saturn migration` to create sqlite database
-3. Run `dotnet fake build -t Run` to start application in watch mode (automatic recompilation and restart at file save)
+1. Run `dotnet tool restore` to restore all necessary tools
+2. Run `dotnet saturn migration` to create sqlite database
+3. Run `dotnet run --project ./src/Migrations` to migrate sqlite database.
+4. Run `dotnet watch --project ./src/ChatgptFSharp` to run your server in watch mode. 
+
+### How to build and deploy onto Fly.io
+
+1. WIP
 
 ### How to use `dotnet saturn`
 
