@@ -3,7 +3,7 @@
 1. Run `dotnet tool restore` to restore all necessary tools
 2. Run `dotnet saturn migration` to create sqlite database
 3. Run `dotnet run --project ./src/Migrations` to migrate sqlite database.
-4. Run `dotnet watch --project ./src/ChatgptFSharp` to run your server in watch mode. 
+4. Run `dotnet watch --project ./src/App` to run your server in watch mode. 
 
 ### How to build and deploy onto Fly.io
 
